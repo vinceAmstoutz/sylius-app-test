@@ -284,3 +284,8 @@ sylius_twig_hooks:
             my_phone_number:
                 template: 'admin/form/mobile_phone_number.html.twig'
                 priority:  400
+                
+        sylius_shop.product.show.content.info.summary.add_to_cart:
+            my_alt_text:
+                template: 'admin/templates/text_add_to_cart.html.twig'
+                priority: 100
