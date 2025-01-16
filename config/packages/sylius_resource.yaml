@@ -43,4 +43,4 @@ sylius_grid:
                     update:
                         type: update
                     delete:
-                        type: delete        
+                        type: delete
