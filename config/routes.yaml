@@ -1,0 +1,15 @@
+app_admin_supplier:
+    resource: |
+        alias: app.supplier
+        section: admin
+        path: /admin/suppliers
+        templates: '@SyliusAdmin\\shared\\crud'
+        redirect: update
+        grid: app_admin_supplier
+        vars:
+            all:
+                subheader: app.ui.supplier
+            index:
+                icon: 'sign language'
+    type: sylius.resource
+

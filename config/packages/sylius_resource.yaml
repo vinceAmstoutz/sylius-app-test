@@ -19,3 +19,28 @@ sylius_resource:
             classes:
                 model: App\Entity\Supplier
                 repository: App\Repository\SupplierRepository
+
+
+sylius_grid:
+    grids:
+        app_admin_supplier:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: App\Entity\Supplier
+            fields:
+                name:
+                    type: string
+                    label: sylius.ui.name
+                description:
+                    type: string
+                    label: sylius.ui.description
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete        
