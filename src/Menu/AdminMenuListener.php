@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Menu;
 
+use Knp\Menu\Util\MenuManipulator;
 use Sylius\Bundle\AdminBundle\Menu\MainMenuBuilder;
 use Sylius\Bundle\UiBundle\Menu\Event\MenuBuilderEvent;
 use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
@@ -27,5 +28,8 @@ final class AdminMenuListener
             ->setAttribute('type', 'link')
             ->setLabel('Suppliers')
         ;
+
+        $manipulator = new MenuManipulator();
+        $manipulator->moveToPosition($menu->getChild('official_support'), $menu->count());
     }
 }
