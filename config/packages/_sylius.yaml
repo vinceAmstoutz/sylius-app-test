@@ -279,3 +279,7 @@ sylius_twig_hooks:
         'sylius_shop.base#javascripts':
             app_javascripts:
                 template: 'shop/javascripts.html.twig'
+                
+        sylius_admin.order.update.content.form.billing_address:
+            my_phone_number:
+                template: 'admin/form/mobile_phone_number.html.twig'
