@@ -11,7 +11,7 @@ final class Version20250115163609 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return '';
+        return 'Add mobile_phone_number into sylius_address';
     }
 
     public function up(Schema $schema): void
