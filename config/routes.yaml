@@ -13,3 +13,11 @@ app_admin_supplier:
                 icon: 'sign language'
     type: sylius.resource
 
+app_supplier_show:
+    path: /suppliers/{id}
+    methods: [GET]
+    defaults:
+        _controller: app.controller.supplier::showAction
+        _sylius:
+            template: shop/supplier.html.twig
+                
